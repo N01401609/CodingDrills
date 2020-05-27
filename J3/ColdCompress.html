@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Cold Compress</title>
+        <script src="ColdCompress.js"></script>
+    </head>
+    <body>
+        <h1>Cold Compress</h1>
+        <p>Encode a message</p>
+        
+        <!-- Form to ask about lines -->
+        <form action="" method="post">
+            
+            <fieldset style="width:50%;">
+            
+                <div>
+                    <label for="lines">How many lines does the message have:</label>
+                    <input type="number" name="lines" id="lines"/>     
+                </div>
+                <div>
+                    <button type="submit" name="submitlines" id="submitl">Submit</button>
+
+                </div>
+            </fieldset>
+        </form>
+        
+        <!-- Show the lines -->
+        <div style="display:none;" id="input-container">
+            <form action="" method="post">
+                <span id= "input"></span>
+                    <div>
+                        
+                        <button type="submit" name="submitxt" id="submitxt">Encode Message</button>
+
+                    </div>
+                
+            </form>
+        </div>
+        
+        <!-- Message Encoded -->
+        <div>
+            <span id="result"></span>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Time to Decompress</title>
+        <script src="TimetoDecompress.js"></script>
+    </head>
+    <body>
+        <h1>Time to Decompress</h1>
+        <p>Encode a message and we will decode it for you!</p>
+        
+        <!-- Form to ask about lines -->
+        <form action="" method="post">
+            
+            <fieldset style="width:50%;">
+            
+                <div>
+                    <label for="lines">How many lines does the message have:</label>
+                    <input type="number" name="lines" id="lines"/>     
+                </div>
+                <div>
+                    <button type="submit" name="submitlines" id="submitl">Submit</button>
+
+                </div>
+            </fieldset>
+        </form>
+        
+        <!-- Show the lines -->
+        <div style="display:none;" id="input-container">
+            <form action="" method="post">
+                <span id= "input"></span>
+                    <div>
+                        
+                        <button type="submit" name="submitxt" id="submitxt">Decode Message</button>
+
+                    </div>
+                
+            </form>
+        </div>
+        
+        <!-- Message Decoded -->
+        <div>
+            <span id="result"></span>
+        </div>
+    </body>
+</html>
